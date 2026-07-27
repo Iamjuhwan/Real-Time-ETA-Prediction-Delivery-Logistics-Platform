@@ -1,0 +1,301 @@
+rider_id,home_zone,experience_months,base_speed_kmh
+D0000,Ajah,19,31.5
+D0001,Ojota,29,31.8
+D0002,Yaba,44,35.0
+D0003,Lekki,16,32.8
+D0004,Apapa,24,32.6
+D0005,Gbagada,16,29.1
+D0006,Victoria Island,43,34.8
+D0007,Lekki,40,34.4
+D0008,Ikeja,36,33.0
+D0009,Surulere,36,38.0
+D0010,Ikoyi,22,35.0
+D0011,Ikoyi,31,33.9
+D0012,Lekki,13,30.8
+D0013,Lekki,20,34.6
+D0014,Ikoyi,39,35.8
+D0015,Ajah,8,27.7
+D0016,Ikeja,16,31.7
+D0017,Yaba,40,33.4
+D0018,Ikoyi,37,31.2
+D0019,Yaba,19,28.4
+D0020,Surulere,10,29.2
+D0021,Ikeja,20,37.4
+D0022,Gbagada,44,36.6
+D0023,Ikoyi,4,25.1
+D0024,Ajah,38,33.6
+D0025,Victoria Island,42,32.8
+D0026,Victoria Island,6,23.6
+D0027,Ajah,9,27.8
+D0028,Ajah,26,32.6
+D0029,Surulere,33,33.6
+D0030,Ikeja,47,36.2
+D0031,Yaba,5,27.1
+D0032,Yaba,46,36.2
+D0033,Surulere,22,33.3
+D0034,Surulere,3,25.7
+D0035,Apapa,17,32.5
+D0036,Ikoyi,40,32.0
+D0037,Ojota,20,33.4
+D0038,Surulere,36,32.9
+D0039,Yaba,24,31.9
+D0040,Surulere,7,27.5
+D0041,Ojota,5,25.4
+D0042,Lekki,26,30.6
+D0043,Ajah,3,24.7
+D0044,Ikeja,21,31.4
+D0045,Ikeja,2,23.3
+D0046,Apapa,39,33.3
+D0047,Ikeja,7,23.1
+D0048,Surulere,39,33.0
+D0049,Victoria Island,39,36.3
+D0050,Victoria Island,19,34.1
+D0051,Ajah,13,30.0
+D0052,Surulere,24,32.4
+D0053,Apapa,22,27.4
+D0054,Victoria Island,11,28.1
+D0055,Ikoyi,36,34.8
+D0056,Apapa,5,25.3
+D0057,Yaba,9,30.4
+D0058,Ikeja,19,33.5
+D0059,Gbagada,7,26.2
+D0060,Yaba,22,32.3
+D0061,Yaba,42,36.6
+D0062,Ojota,42,30.8
+D0063,Ikoyi,11,28.5
+D0064,Ojota,14,27.2
+D0065,Ikeja,27,31.0
+D0066,Lekki,39,37.1
+D0067,Victoria Island,2,23.1
+D0068,Ojota,29,29.1
+D0069,Ikoyi,13,27.9
+D0070,Surulere,36,30.2
+D0071,Lekki,27,33.0
+D0072,Apapa,13,30.8
+D0073,Yaba,15,32.3
+D0074,Ikoyi,32,34.4
+D0075,Lekki,1,20.2
+D0076,Ajah,43,34.4
+D0077,Apapa,9,28.0
+D0078,Ikeja,23,34.2
+D0079,Gbagada,44,35.2
+D0080,Lekki,11,33.1
+D0081,Victoria Island,10,26.9
+D0082,Ikeja,11,27.1
+D0083,Victoria Island,10,27.8
+D0084,Ajah,9,28.1
+D0085,Ikoyi,41,32.3
+D0086,Lekki,17,29.3
+D0087,Ajah,17,31.7
+D0088,Ojota,29,32.0
+D0089,Gbagada,42,32.2
+D0090,Ikoyi,5,23.3
+D0091,Ikeja,6,22.2
+D0092,Victoria Island,6,29.4
+D0093,Ojota,36,36.0
+D0094,Ikoyi,25,34.1
+D0095,Victoria Island,3,25.7
+D0096,Ikeja,16,29.7
+D0097,Ikeja,28,34.0
+D0098,Ojota,9,26.1
+D0099,Lekki,24,32.5
+D0100,Gbagada,19,30.0
+D0101,Victoria Island,7,28.4
+D0102,Surulere,10,31.9
+D0103,Apapa,41,31.6
+D0104,Ajah,17,30.0
+D0105,Victoria Island,21,32.1
+D0106,Lekki,44,30.1
+D0107,Apapa,19,28.4
+D0108,Surulere,22,35.1
+D0109,Lekki,22,32.7
+D0110,Lekki,27,31.5
+D0111,Ojota,17,31.0
+D0112,Ajah,5,25.1
+D0113,Ajah,34,33.5
+D0114,Gbagada,11,28.3
+D0115,Apapa,36,33.2
+D0116,Ajah,39,34.9
+D0117,Yaba,29,34.1
+D0118,Ojota,3,27.6
+D0119,Gbagada,19,32.3
+D0120,Ojota,28,32.9
+D0121,Ikoyi,2,27.1
+D0122,Ojota,27,32.3
+D0123,Lekki,35,29.0
+D0124,Surulere,24,34.0
+D0125,Victoria Island,1,23.5
+D0126,Ojota,16,30.8
+D0127,Ojota,18,33.0
+D0128,Ikeja,13,29.1
+D0129,Victoria Island,37,29.2
+D0130,Surulere,26,34.3
+D0131,Ikeja,46,32.4
+D0132,Gbagada,9,26.4
+D0133,Ojota,42,29.5
+D0134,Lekki,39,35.0
+D0135,Surulere,27,27.8
+D0136,Apapa,29,35.4
+D0137,Ojota,18,30.6
+D0138,Yaba,6,28.3
+D0139,Surulere,40,34.4
+D0140,Apapa,15,34.2
+D0141,Ikeja,2,24.6
+D0142,Ajah,22,34.5
+D0143,Ajah,8,26.7
+D0144,Yaba,18,28.2
+D0145,Yaba,2,25.8
+D0146,Ojota,25,29.3
+D0147,Victoria Island,7,28.8
+D0148,Victoria Island,17,28.9
+D0149,Ajah,45,34.3
+D0150,Surulere,39,37.3
+D0151,Surulere,4,26.7
+D0152,Ojota,41,33.2
+D0153,Lekki,21,32.8
+D0154,Lekki,2,22.8
+D0155,Lekki,47,38.0
+D0156,Ikoyi,2,22.4
+D0157,Ajah,15,30.3
+D0158,Lekki,3,25.8
+D0159,Apapa,40,34.3
+D0160,Ikeja,40,34.5
+D0161,Apapa,26,31.6
+D0162,Gbagada,27,32.2
+D0163,Apapa,21,33.7
+D0164,Yaba,46,35.5
+D0165,Apapa,9,29.1
+D0166,Yaba,46,36.4
+D0167,Ikoyi,41,35.5
+D0168,Ajah,40,35.2
+D0169,Ikoyi,40,30.4
+D0170,Ikoyi,6,27.5
+D0171,Lekki,26,33.0
+D0172,Ojota,43,36.6
+D0173,Victoria Island,34,27.6
+D0174,Victoria Island,22,31.8
+D0175,Surulere,17,31.3
+D0176,Yaba,5,23.9
+D0177,Ajah,37,31.6
+D0178,Yaba,44,36.6
+D0179,Ikeja,2,24.8
+D0180,Gbagada,10,32.5
+D0181,Gbagada,11,28.8
+D0182,Ikoyi,45,30.9
+D0183,Ikeja,12,28.9
+D0184,Lekki,8,26.9
+D0185,Yaba,10,30.2
+D0186,Lekki,43,35.0
+D0187,Ikoyi,30,34.0
+D0188,Ajah,38,38.0
+D0189,Ikoyi,41,36.1
+D0190,Yaba,17,29.4
+D0191,Victoria Island,11,31.2
+D0192,Ikoyi,45,33.8
+D0193,Lekki,37,33.0
+D0194,Victoria Island,9,31.1
+D0195,Yaba,31,31.3
+D0196,Yaba,21,33.8
+D0197,Apapa,34,34.8
+D0198,Apapa,45,31.9
+D0199,Gbagada,6,23.5
+D0200,Ajah,25,32.3
+D0201,Ojota,21,26.0
+D0202,Ikeja,23,34.5
+D0203,Ojota,20,32.5
+D0204,Apapa,28,35.7
+D0205,Apapa,30,33.6
+D0206,Ajah,47,36.8
+D0207,Victoria Island,43,32.5
+D0208,Apapa,3,25.7
+D0209,Apapa,31,32.3
+D0210,Ojota,21,31.7
+D0211,Yaba,41,33.8
+D0212,Lekki,17,31.8
+D0213,Apapa,32,31.7
+D0214,Apapa,18,32.2
+D0215,Ikoyi,39,33.6
+D0216,Ikeja,35,30.6
+D0217,Ajah,11,25.7
+D0218,Lekki,7,29.6
+D0219,Lekki,30,28.5
+D0220,Surulere,43,33.3
+D0221,Ajah,6,23.8
+D0222,Gbagada,8,31.3
+D0223,Lekki,14,31.4
+D0224,Yaba,42,34.3
+D0225,Yaba,34,31.7
+D0226,Apapa,17,28.3
+D0227,Gbagada,7,27.7
+D0228,Surulere,15,30.5
+D0229,Apapa,26,30.5
+D0230,Yaba,4,23.2
+D0231,Surulere,37,31.2
+D0232,Yaba,39,31.2
+D0233,Victoria Island,39,32.3
+D0234,Lekki,17,31.8
+D0235,Surulere,22,33.1
+D0236,Apapa,12,29.5
+D0237,Yaba,15,30.8
+D0238,Lekki,7,28.4
+D0239,Apapa,15,26.6
+D0240,Ojota,12,30.0
+D0241,Ikeja,44,36.3
+D0242,Ikoyi,31,29.2
+D0243,Ikoyi,47,28.3
+D0244,Victoria Island,42,33.3
+D0245,Ajah,38,35.7
+D0246,Apapa,4,25.1
+D0247,Ajah,23,33.5
+D0248,Victoria Island,20,32.4
+D0249,Apapa,26,30.3
+D0250,Ojota,6,24.8
+D0251,Yaba,38,30.1
+D0252,Apapa,47,36.8
+D0253,Yaba,42,35.3
+D0254,Yaba,19,31.3
+D0255,Gbagada,29,32.5
+D0256,Victoria Island,17,29.5
+D0257,Ikoyi,14,31.1
+D0258,Surulere,10,27.3
+D0259,Ikoyi,45,33.0
+D0260,Ikeja,40,32.3
+D0261,Ikoyi,10,30.3
+D0262,Surulere,39,33.2
+D0263,Ojota,43,33.9
+D0264,Surulere,32,30.9
+D0265,Victoria Island,12,28.3
+D0266,Lekki,46,34.1
+D0267,Ikeja,21,28.7
+D0268,Ikoyi,12,29.1
+D0269,Ikoyi,37,33.4
+D0270,Apapa,40,31.0
+D0271,Ikoyi,1,25.0
+D0272,Lekki,47,34.5
+D0273,Surulere,10,28.5
+D0274,Apapa,39,32.1
+D0275,Yaba,19,28.3
+D0276,Yaba,18,33.2
+D0277,Yaba,10,27.9
+D0278,Victoria Island,23,29.4
+D0279,Ajah,31,31.6
+D0280,Yaba,47,34.7
+D0281,Ikoyi,19,32.0
+D0282,Ikeja,12,27.5
+D0283,Ikeja,36,35.7
+D0284,Victoria Island,23,29.4
+D0285,Yaba,9,31.0
+D0286,Surulere,14,30.7
+D0287,Surulere,43,32.9
+D0288,Ikoyi,13,29.4
+D0289,Yaba,12,29.7
+D0290,Ikeja,45,34.8
+D0291,Ojota,11,25.6
+D0292,Ikoyi,19,30.0
+D0293,Ikeja,8,27.9
+D0294,Victoria Island,37,35.8
+D0295,Lekki,44,36.0
+D0296,Surulere,40,36.8
+D0297,Ajah,3,26.8
+D0298,Ajah,15,28.9
+D0299,Ajah,36,33.4
