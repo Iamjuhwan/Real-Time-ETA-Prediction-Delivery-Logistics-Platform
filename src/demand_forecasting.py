@@ -10,7 +10,7 @@ Key discipline carried over from feature engineering: only use features actually
 at forecast time. In particular, `is_rain`  is
 NOT used here — you don't know tomorrow's actual rain, only a forecast
 probability, which has real but imperfect skill. This script simulates that
-distinction explicitly rather than quietly using ground-truth rain, which
+distinction explicitly rathesr than quietly using ground-truth rain, which
 would make the forecast look better than it could ever be in production.
 
 Baseline: seasonal-naive (predict this week using last week's same zone/hour

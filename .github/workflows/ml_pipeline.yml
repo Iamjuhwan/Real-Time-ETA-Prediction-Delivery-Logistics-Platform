@@ -1,0 +1,98 @@
+ # CI/CD pipeline
+#
+# Two triggers, two different jobs, because they answer two different
+# questions:
+#   - "test" runs on every push/PR: does the code still work? (correctness)
+#   - "check_drift" runs on a schedule: does the MODEL still work against
+#     current data? (correctness of the deployed artifact, not the code)
+#
+# These are easy to conflate into one pipeline, but they have different
+# failure modes and different people who should care about each — a broken
+# test blocks a merge, a drift alert is an ops/on-call signal, not a code
+# review blocker. Keeping them as separate jobs makes that distinction
+# explicit rather than papering over it in one big "CI" script.
+
+name: ML Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Daily drift check against accumulated production prediction logs.
+    # Cron is UTC; adjust if you want this to land at a specific local time.
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}   # allow manual trigger from the Actions tab
+
+jobs:
+  test:
+    name: Run test suite
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: pytest tests/ -v --junitxml=test-results.xml
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results.xml
+
+  check_drift:
+    name: Check model drift against production logs
+    runs-on: ubuntu-latest
+    # Only run on schedule or manual trigger — not on every push, since
+    # drift is a property of accumulated production traffic, not of a code
+    # change.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # In a real deployment this step would pull the prediction log from
+      # wherever the serving app actually writes it (S3, a database, a
+      # logging pipeline) — checked out here as a placeholder path since
+      # this repo doesn't run a persistent server.
+      - name: Run drift check
+        id: drift
+        run: |
+          cd monitoring
+          python drift_check.py --data_dir ../data --log_path ../logs/predictions.jsonl
+        continue-on-error: true   # capture the exit code instead of failing the job outright
+
+      - name: Flag retraining if drift detected
+        if: steps.drift.outcome == 'failure'
+        run: |
+          echo "::warning::Drift detected in production prediction logs — model may need retraining."
+          echo "See the drift_check.py output above for which features/predictions shifted."
+          # A real pipeline would trigger retraining here — e.g. dispatch a
+          # workflow_dispatch event to a separate 'retrain.yml' workflow, or
+          # open a tracking issue automatically. Left as an explicit manual
+          # step rather than auto-retraining and auto-deploying, since
+          # silently replacing a production model without human review is
+          # its own risk.
