@@ -63,7 +63,13 @@ FEATURE_COLS = [
 ]
 CATEGORICAL_COLS = ["cuisine", "restaurant_zone", "customer_zone"]
 
-app = FastAPI(title="Chowdeck-style ETA Prediction Service", version="1.0.0")
+app = FastAPI(title="ETA Prediction Service", version="1.0.0")
+
+from fastapi.responses import RedirectResponse
+
+@app.get("/")
+def root():
+    return RedirectResponse(url="/docs")
 
 # --- Models loaded once at import time, not per-request ---
 _model_p50: Optional[lgb.Booster] = None
